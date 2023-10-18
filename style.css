@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: M;
+    src: url(CarterOne.ttf);
+}
+
+
+@keyframes transitionIn {
+    0% {
+        opacity: 0;
+        transform: rotateX(-20deg);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+body{
+    font-family: 'Sitka Display';
+    text-align: center;
+    background-color: rgb(24, 3, 3);
+}
+
+#sticky{
+    width: 90%;
+    margin: 0 auto;
+    animation: transitionIn 2s;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 0, 0, 0);
+    position: fixed;
+    z-index: 2;
+}
+
+#logo{
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 160px;
+}
+
+#logo img{
+    width: 70px;
+    transition: all 0.5s ease-in-out;
+}
+
+#logo img:hover{
+    transform: rotateX(40deg);
+}
+
+nav{
+    float: right;
+    line-height: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: white;
+    padding: 36px 10px;
+    margin: 0 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover{
+    color: rgb(180, 52, 52);
+}
+
+#banner-container{
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center center;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+}
+
+#banner-container:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39, 0, 0);
+    opacity: .7;
+    z-index: -1;
+}
+
+#content-area{
+    width: 100%;
+    height: 10000px;
+    position: relative;
+    background-color: rgb(78, 25, 25);
+    top: 800px;
+    color: white;
+}
+
+#content-area h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 50px;
+    animation: transitionIn 2s;
+
+}
+
+#content-area p{
+    padding: 2% 0;
+    line-height: 30px;
+    text-align: center;
+    animation: transitionIn 2s;
+}
+
+#icons{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#iconse{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#icons-content{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+#icons-contents{
+    margin-top: 180px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+
+#icons #e{
+    margin: 10px;
+    width: 20%;
+    height: 10000%;
+    background-color: white;
+    border-radius: 5px;
+    border: 5px solid black;
+    font-family: 'Sitka Small';
+    font-weight: 700;
+    box-shadow: 15px 15px 20px rgb(24, 3, 3);
+    transition: all 0.6s ease-in-out;
+}
+
+#iconse #s{
+    margin: 10px;
+    width: 20%;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    border: 5px solid black;
+    font-family: 'Sitka Small';
+    font-weight: 700;
+    box-shadow: 15px 15px 20px rgb(24, 3, 3);
+    transition: all 0.6s ease-in-out;
+}
+
+#e a{
+    text-decoration: none;
+    color: black;
+}
+
+#icons #e:hover{
+    background-color: rgb(196, 103, 103);
+}
+
+#icons img{
+    width: 40%;
+}
+
+#iconse img{
+    margin-top: 100px;
+    margin-bottom: -100px;
+    width: 40%;
+    box-shadow:  2px 2px 10px 5px rgb(0, 0, 0);
+}
+
+#s a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#iconse #s:hover{
+    background-color: rgb(196, 103, 103);
+}
+
+#r{
+    font-size: 20px;
+    width: 10px;
+}
+
+#content-area h1{
+    margin-top: 100px;
+    font-size: 90px;
+    line-height: 40px;
+}
+
+#ad{
+    padding-top: 100px;
+}
+
+#wrapper{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+#a{
+    font-size: 20px;
+    font-family: 'Segoe UI Display';
+}
+
+#text{
+    text-align: center;
+    width: 50%;
+}
+
+#core{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 100px;
+    width: 100%;
+    height: 500px;
+}
+
+#box1, #box2{
+    display: block;
+    margin: 50px;
+    padding: 50px;
+    font-family: 'Sitka Subtext';
+    color: rgb(180, 52, 52);
+    box-shadow: 15px 15px 50px 20px rgb(24, 3, 3);
+    background-color: rgb(78, 25, 25);
+    border-radius: 15px;
+}
+
+#box1 #miss{
+    animation: animate 5s linear infinite;
+}
+
+#box2 #miss{
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%, 100%{
+        color: rgb(163, 73, 73);
+        text-shadow: 0 0 15px rgb(206, 99, 99);
+    }
+}
+
+#content{
+    margin-top: 50px;
+    font-size: 30px;
+    color: white;
+}
+
+#programcont{
+    padding: 50px;
+    margin-top: 200px;
+    background-color: rgb(68, 22, 22);
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 100px rgb(34, 13, 13);
+}
+
+#pic{
+    width: 40%;
+    float: left;
+}
+
+#programcont p{
+    line-height: 50px;
+    margin-left: 12%;
+    font-size: 20px;
+}
